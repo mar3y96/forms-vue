@@ -47,6 +47,11 @@
         <input id="how-other" value="other" name="how" v-model="how" type="radio" />
         <label for="how-other">Other</label>
       </div>
+      <div>
+        <input id="confirm-use"  name="confirmation" v-model="confirm" type="checkbox" />
+        <label for="confirm-use">confirmation for Learning</label>
+      </div>
+      
       <div class="form-control">
       <rating-control v-model="rating" ></rating-control>
       </div>
@@ -69,11 +74,13 @@ export default {
       how: null,
       userNameValidaty: 'pending',
       rating:null,
+      confirm:false
     }
   },
   methods: {
     submitForm() {
       console.log(this.rating);
+      console.log(this.confirm);
       this.rating=null
     },
     validateInput() {
