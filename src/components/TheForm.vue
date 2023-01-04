@@ -1,5 +1,6 @@
 <template>
   <form>
+
     <div class="form-control">
       <label for="user-name">Your Name</label>
       <input id="user-name" name="user-name" type="text" />
@@ -94,8 +95,8 @@ input[type='radio'] {
   margin-right: 1rem;
 }
 
-input[type='checkbox'] + label,
-input[type='radio'] + label {
+input[type='checkbox']+label,
+input[type='radio']+label {
   font-weight: normal;
 }
 
